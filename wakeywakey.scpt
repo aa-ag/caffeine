@@ -1,4 +1,6 @@
-repeat while true
-    beep
-    delay 1
-end repeat
+tell application "System Events"
+    repeat
+        key code 57
+        delay 60
+    end repeat
+end tell
