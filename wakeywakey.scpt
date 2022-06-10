@@ -1,6 +1,4 @@
-tell application "System Events"
+repeat while true
+    beep
     delay 1
-    keystroke "Hello"
-    delay 1
-    keystroke " World!"
-end tell
+end repeat
