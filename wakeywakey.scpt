@@ -3,7 +3,7 @@ tell application "System Events"
     repeat
         key code 57
         set minutes to minutes + 1
-        display dialog (minutes)
+        log minutes
         delay 1
     end repeat
 end tell
