@@ -1,6 +1,9 @@
 tell application "System Events"
+    set minutes to 0
     repeat
         key code 57
-        delay 60
+        set minutes to minutes + 1
+        display dialog (minutes)
+        delay 1
     end repeat
 end tell
