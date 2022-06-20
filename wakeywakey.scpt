@@ -4,13 +4,8 @@ tell application "System Events"
         key code 57
 
         set minutes to minutes as string
-        
-        if (minutes = "1")
-            set message to minutes & " minute"
-        else
-            set message to minutes & " minutes"
 
-        end if
+        set message to minutes & " m"
         
         log message
         
@@ -18,6 +13,6 @@ tell application "System Events"
 
         set minutes to minutes + 1
         
-        delay 60
+        delay 1
     end repeat
 end tell
