@@ -15,11 +15,12 @@ tell application "System Events"
         set minutes to minutes + 1
 
         if (hour = 60) then
-            chime
+            say "beep"
+            set hour to 0
         else
             set hour to hour + 1
         end if
         
-        delay 1
+        delay 0.5
     end repeat
 end tell
