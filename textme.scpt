@@ -1,7 +1,9 @@
 tell application "Messages"
-    set targetService to 1st service whose service type = iMessage
-    set targetBuddy to system attribute "RECIPIENT"
-    set targetMessage to "Hello World"
-    send targetMessage to targetBuddy
-    say targetMessage
+    set recipient to (system attribute "RECIPIENT")
+    log recipient
+    # set targetBuddy to recipient
+    # set targetService to 1st service whose service type = iMessage
+    # set targetMessage to "Hello World"
+    # send targetMessage to targetBuddy
+    # say targetMessage
 end tell
