@@ -21,6 +21,6 @@ tell application "System Events"
             set hour to hour + 1
         end if
         
-        delay 1
+        delay 60
     end repeat
 end tell
